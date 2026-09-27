@@ -3,16 +3,16 @@ import PageHero, { LINK_MEDIA } from '@/components/site/PageHero';
 import { ArrowRight } from 'lucide-react';
 
 const SERVICES = [
-  { name: 'Lead Generation', desc: 'Targeted campaigns that fill your pipeline with inbound and outbound opportunities aligned to your ideal customer.' },
-  { name: 'Lead Response', desc: 'Every inquiry is contacted fast — within minutes, not hours — so interest never goes cold.' },
-  { name: 'Lead Qualification', desc: 'Each conversation is measured against your criteria so your team only spends time on real opportunities.' },
-  { name: 'Appointment Setting', desc: 'Qualified prospects are booked directly onto your sales team calendar.' },
-  { name: 'Live Call Transfers', desc: 'Hot, qualified prospects are transferred live to your team the moment they are ready to talk.' },
-  { name: 'Lead Nurturing', desc: 'Not-ready-yet leads stay in a structured follow-up sequence until the timing aligns.' },
-  { name: 'Database Reactivation', desc: 'Old, untouched leads are re-engaged and turned back into active opportunities.' },
-  { name: 'Customer Re-Engagement', desc: 'Past customers are reactivated for repeat business, upsells, and referrals.' },
-  { name: 'Lead Routing', desc: 'The right prospect is routed to the right person on your team based on your rules.' },
-  { name: 'Reporting', desc: 'Clear, measurable performance so you always know what is working and what is not.' },
+  { name: 'Lead Generation', desc: 'Targeted campaigns use market, microterritory, intent, and audience signals to create inquiries aligned to your ideal customer.' },
+  { name: 'Identity & Mobile Verification', desc: 'Contact details can be verified before an inquiry advances, reducing bad numbers and preventing unverified registrations from being treated as qualified leads.' },
+  { name: 'Lead Response', desc: 'Every inquiry enters a documented response workflow so speed, attempts, and next actions are visible instead of assumed.' },
+  { name: 'Lead Qualification', desc: 'Each conversation is measured against client-approved criteria for fit, intent, timing, geography, and other campaign-specific requirements.' },
+  { name: 'Behavioral Intent Monitoring', desc: 'Declared intent and observed activity can be compared so renewed interest, repeat behavior, and timing changes trigger the right follow-up.' },
+  { name: 'Appointment Setting', desc: 'Qualified prospects are booked directly onto the appropriate sales calendar with qualification context attached.' },
+  { name: 'Live Call Transfers', desc: 'Ready-now prospects are connected live with an evidence trail showing qualification, transfer, and acceptance checkpoints.' },
+  { name: 'Lead Routing & Acceptance', desc: 'Routing rules, acceptance timers, and backup paths help qualified handoffs reach the right professional without disappearing in the gap.' },
+  { name: 'Database Reactivation', desc: 'Older opportunities can be re-engaged and requalified when behavior or direct response indicates renewed intent.' },
+  { name: 'Evidence-Backed Reporting', desc: 'Verification, consent, qualification, contact, handoff, acceptance, and outcome records support transparent reporting and billing.' },
 ];
 
 export default function Services() {
@@ -20,15 +20,15 @@ export default function Services() {
     <>
       <PageHero
         eyebrow="Services"
-        title="Everything Between a Lead and a Closed Deal"
-        subtitle="Link works the opportunity end-to-end—from the moment an inquiry arrives to the moment your sales team receives a qualified conversation."
+        title="Everything Between an Inquiry and a Documented Handoff"
+        subtitle="Link works the acquisition gap end-to-end—from initial inquiry through verification, qualification, documented contact, routing, handoff, acceptance, and outcome tracking."
         image={LINK_MEDIA.representative}
         imageAlt="Professional Link representative engaging a prospect"
         imagePosition="62% center"
       >
         <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#e0bd55]">The engagement path</p>
         <div className="mt-5 grid grid-cols-4 gap-2">
-          {['Respond', 'Qualify', 'Connect', 'Report'].map((label, i) => (
+          {['Verify', 'Qualify', 'Connect', 'Prove'].map((label, i) => (
             <div key={label} className="text-center">
               <span className="mx-auto flex h-8 w-8 items-center justify-center rounded-full border border-[#d4af37]/60 text-[10px] text-[#e0bd55]">{i + 1}</span>
               <p className="mt-2 text-[9px] uppercase tracking-[.08em] text-white/65">{label}</p>
