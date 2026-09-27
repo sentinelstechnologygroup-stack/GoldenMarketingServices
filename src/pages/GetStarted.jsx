@@ -59,7 +59,7 @@ export default function GetStarted() {
       return { ...f, [k]: arr };
     });
 
-  const canNext = step === 1 ? form.industry : step === 2 ? form.volume : form.name && form.email;
+  const canNext = step === 1 ? form.industry : step === 2 ? form.volume : form.name && form.email && form.phone;
 
   const submit = async (e) => {
     e.preventDefault();
@@ -263,8 +263,8 @@ export default function GetStarted() {
                 <Field label="Email *">
                   <input name="email" type="email" inputMode="email" autoComplete="email" required value={form.email} onChange={(e) => set('email', e.target.value)} className={inputCls} />
                 </Field>
-                <Field label="Phone">
-                  <input name="phone" type="tel" inputMode="tel" autoComplete="tel" value={form.phone} onChange={(e) => set('phone', e.target.value)} className={inputCls} />
+                <Field label="Phone *">
+                  <input name="phone" type="tel" inputMode="tel" autoComplete="tel" required value={form.phone} onChange={(e) => set('phone', e.target.value)} className={inputCls} />
                 </Field>
                 <Field label="Market / Location">
                   <input name="market" autoComplete="address-level2" value={form.market} onChange={(e) => set('market', e.target.value)} className={inputCls} />
@@ -322,7 +322,7 @@ export default function GetStarted() {
               </div>
 
               <p className="mt-6 text-xs leading-5 text-[#647275]">
-                By submitting, you agree that Link Marketing Services may contact you about this inquiry by phone, email, or SMS. Message and data rates may apply. Consent is not a condition of purchase. See our <a href="/communications-policy" className="underline">communications policy</a> and <a href="/privacy" className="underline">privacy policy</a>.
+                By submitting, you are requesting additional information and agree that Link Marketing Services may contact you by phone, text, or email regarding your inquiry. Message and data rates may apply. Consent is not a condition of purchase. See our <a href="/communications-policy" className="underline">communications policy</a> and <a href="/privacy" className="underline">privacy policy</a>.
               </p>
               {submitState.error && (
                 <p className="mt-4 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800" role="alert">
