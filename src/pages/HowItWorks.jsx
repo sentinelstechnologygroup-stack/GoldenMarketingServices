@@ -2,12 +2,14 @@ import { Container, CTAButton, Reveal } from '@/components/site/ui';
 import PageHero, { LINK_MEDIA } from '@/components/site/PageHero';
 
 const STEPS = [
-  { n: '01', title: 'Discovery', desc: 'We learn your business, market, lead sources, and current sales process.' },
-  { n: '02', title: 'Qualification', desc: 'Together we define exactly what counts as a qualified opportunity.' },
-  { n: '03', title: 'Program Setup', desc: 'We build the script, qualification flow, routing, and follow-up process.' },
-  { n: '04', title: 'Launch', desc: 'We start handling your leads — responding, qualifying, and routing.' },
-  { n: '05', title: 'Optimize', desc: 'We measure what is working and refine the process continuously.' },
-  { n: '06', title: 'Scale', desc: 'We expand volume, markets, locations, or services as you grow.' },
+  { n: '01', title: 'Inquiry', desc: 'A prospect raises a hand through an ad, landing page, search experience, referral, or other approved source.' },
+  { n: '02', title: 'Verified Prospect', desc: 'Identity and contact information are validated before the opportunity advances through the qualification gate.' },
+  { n: '03', title: 'Qualified Lead', desc: 'The prospect meets the campaign-specific criteria your team approved for fit, intent, geography, timing, and other requirements.' },
+  { n: '04', title: 'Contacted Lead', desc: 'A Link representative completes real outreach and records the conversation, attempts, disposition, and next action.' },
+  { n: '05', title: 'Qualified Handoff', desc: 'The opportunity has passed the required checks and is packaged with qualification context and supporting evidence.' },
+  { n: '06', title: 'Warm Transfer / Appointment', desc: 'When appropriate, Link connects the prospect live or schedules the next conversation directly with the receiving professional.' },
+  { n: '07', title: 'Accepted Handoff', desc: 'The receiving client accepts the handoff, creating a clear operational and billing checkpoint.' },
+  { n: '08', title: 'Client Outcome', desc: 'The result is tracked through follow-up, appointment, sale, closed-lost, or another final disposition so the acquisition loop can be optimized.' },
 ];
 
 export default function HowItWorks() {
@@ -15,8 +17,8 @@ export default function HowItWorks() {
     <>
       <PageHero
         eyebrow="How It Works"
-        title="From Discovery to Scale in Six Steps"
-        subtitle="A measured operating process that turns raw inquiries into qualified conversations your sales team can advance."
+        title="From Inquiry to Client Outcome in Eight Controlled Stages"
+        subtitle="A controlled qualification gate that separates raw inquiries from verified, qualified, documented handoffs your team can act on."
         image={LINK_MEDIA.bridge}
         imageAlt="Architectural bridge representing the connection between marketing and sales"
       >
