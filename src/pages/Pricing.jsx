@@ -17,8 +17,8 @@ export default function Pricing() {
     <>
       <PageHero
         eyebrow="Performance-aligned pricing"
-        title="Pay for Qualified Opportunities—not Promises"
-        subtitle="No retainer. No setup fee. Your program is priced around the qualified opportunities delivered to your team."
+        title="Pay for Defined, Documented Outcomes—not Raw Registrations"
+        subtitle="No retainer. No setup fee. Your program is priced around the defined handoff outcome in your agreement—not clicks, impressions, or unverified form submissions."
         image={LINK_MEDIA.team}
         imageAlt="Professional engagement team handling business conversations"
         imagePosition="58% center"
@@ -49,11 +49,10 @@ export default function Pricing() {
                 NO SETUP FEE.
               </h2>
               <p className="mt-6 text-xl text-[#d4af37] font-medium">
-                Pay for qualified opportunities delivered.
+                Pay for the defined acquisition outcome delivered.
               </p>
               <p className="mt-4 text-[#9fb3b3] max-w-xl mx-auto">
-                You only pay when we deliver a conversation that matches your definition of a qualified
-                opportunity.
+                Your agreement defines exactly what becomes billable—such as a Qualified Handoff, Warm Transfer, or Scheduled Appointment—and the supporting verification, qualification, and acceptance record travels with it.
               </p>
               <div className="mt-8 flex justify-center">
                 <CTAButton to="/get-started" size="lg">
