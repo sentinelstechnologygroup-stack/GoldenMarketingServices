@@ -55,10 +55,11 @@ export default async function handler(req, res) {
   const email = text(body.email, 254).toLowerCase();
   const industry = text(body.industry, 100);
   const volume = text(body.volume, 100);
+  const phone = text(body.phone, 40);
   const started = Date.parse(body.formStartedAt);
   const elapsed = Date.now() - started;
 
-  if (!name || !email || !industry || !volume) return res.status(400).json({ error: 'Required fields are missing' });
+  if (!name || !email || !phone || !industry || !volume) return res.status(400).json({ error: 'Required fields are missing' });
   if (body.consentVersion !== PROGRAM_REVIEW_CONSENT_VERSION || body.consentAccepted !== true) {
     return res.status(400).json({ error: 'Consent is required' });
   }
@@ -72,7 +73,9 @@ export default async function handler(req, res) {
     volume,
     company: text(body.company, 160),
     website: text(body.website, 500),
-    phone: text(body.phone, 40),
+    phone,
+    lifecycleStage: 'inquiry',
+    verificationStatus: 'pending',
     market: text(body.market, 160),
     sources: list(body.sources),
     services: list(body.services),
