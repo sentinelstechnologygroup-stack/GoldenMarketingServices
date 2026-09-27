@@ -36,12 +36,14 @@ const services = [
 ];
 
 const process = [
-  ['01', 'Lead received'],
-  ['02', 'Rapid response'],
-  ['03', 'Human conversation'],
-  ['04', 'Qualification'],
-  ['05', 'Appointment or live transfer'],
-  ['06', 'Client sales team']
+  ['01', 'Inquiry'],
+  ['02', 'Verified prospect'],
+  ['03', 'Qualified lead'],
+  ['04', 'Contacted lead'],
+  ['05', 'Qualified handoff'],
+  ['06', 'Warm transfer / appointment'],
+  ['07', 'Accepted handoff'],
+  ['08', 'Client outcome']
 ];
 
 /** @typedef {import('react').ComponentType<import('lucide-react').LucideProps>} IconComponent */
@@ -114,7 +116,7 @@ export default function Home() {
                 <span className="mt-1 block text-[#e0bd55]">Start Talking to Qualified Prospects.</span>
               </h1>
               <p className="mt-7 max-w-xl text-lg leading-8 text-white/80">
-                We respond, qualify, set appointments, and live-transfer high-intent prospects—so your team can focus on closing.
+                We verify, qualify, document, and hand off high-intent prospects—so your team spends less time chasing raw inquiries and more time advancing real opportunities.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <CTAButton to="/get-started" size="lg">Build My Lead Program <ArrowRight size={17} /></CTAButton>
@@ -176,7 +178,7 @@ export default function Home() {
       <section className="bg-[#f4f1ea] py-16">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[.8fr_2.2fr] lg:items-end">
-            <SectionIntro eyebrow="A clear path from lead to opportunity" title="The Link Process" />
+            <SectionIntro eyebrow="A defined path from inquiry to client outcome" title="The LMS Qualification Gate" />
             <div className="grid grid-cols-2 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
               {process.map(([number, label], i) => (
                 <div key={number} className="relative pr-4">
@@ -222,8 +224,8 @@ export default function Home() {
             <Reveal>
               <SectionIntro
                 eyebrow="Where revenue quietly disappears"
-                title="The Problem Between Marketing and Sales"
-                body="Many businesses generate leads, but too many go unworked, are poorly qualified, or never reach the right person. Link Marketing Services closes that gap with a structured response process that turns more leads into real conversations."
+                title="The Difference Between a Raw Inquiry and a Qualified Handoff"
+                body="Most lead processes stop at a form submission. Link Marketing Services continues through verification, qualification, human contact, documented handoff, client acceptance, and outcome tracking."
               />
             </Reveal>
             <div className="grid gap-4 sm:grid-cols-2">
