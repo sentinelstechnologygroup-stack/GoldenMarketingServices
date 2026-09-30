@@ -16,7 +16,7 @@ const NAV = [
 ];
 
 function Wordmark() {
-  return <BrandLogo className="block h-[58px] w-[188px]" />;
+  return <BrandLogo className="block h-[58px] w-[230px]" />;
 }
 
 export default function Header() {
