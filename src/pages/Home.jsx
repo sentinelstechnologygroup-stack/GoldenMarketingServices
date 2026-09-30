@@ -178,7 +178,7 @@ export default function Home() {
       <section className="bg-[#f4f1ea] py-16">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[.8fr_2.2fr] lg:items-end">
-            <SectionIntro eyebrow="A defined path from inquiry to client outcome" title="The LMS Qualification Gate" />
+            <SectionIntro eyebrow="A defined path from inquiry to client outcome" title="The GMS Qualification Gate" />
             <div className="grid grid-cols-2 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
               {process.map(([number, label], i) => (
                 <div key={number} className="relative pr-4">
@@ -236,7 +236,7 @@ export default function Home() {
                 </ul>
               </div>
               <div className="bg-[#00616a] p-7 text-white shadow-[0_18px_50px_rgba(0,49,55,.18)]">
-                <p className="font-serif text-2xl">The Link Advantage</p>
+                <p className="font-serif text-2xl">The Golden Advantage</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/78">
                   {['Prompt, professional follow-up', 'Qualified prospects', 'Structured process', 'More conversations for your team'].map(x => <li key={x} className="flex gap-3"><Check size={15} className="mt-0.5 shrink-0 text-[#e0bd55]" />{x}</li>)}
                 </ul>
