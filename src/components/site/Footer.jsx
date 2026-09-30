@@ -4,11 +4,11 @@ import BrandLogo from './BrandLogo';
 
 const CUSTOMER_PORTAL_SIGN_IN =
   import.meta.env.VITE_CUSTOMER_PORTAL_SIGN_IN_URL ||
-  'https://golden-marketing-services-customer.vercel.app/login';
+  'https://customer.goldenmarketingservices.com/login';
 
 const AGENT_PORTAL_SIGN_IN =
   import.meta.env.VITE_AGENT_PORTAL_SIGN_IN_URL ||
-  'https://golden-marketing-services-agent.vercel.app/login';
+  'https://agentcrm.goldenmarketingservices.com/login';
 
 const COLS = [
   {
