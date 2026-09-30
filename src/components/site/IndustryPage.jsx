@@ -12,14 +12,14 @@ export default function IndustryPage({ industry }) {
         title={industry.headline}
         subtitle={industry.intro}
         image={LINK_MEDIA.team}
-        imageAlt={`Professional Link representatives handling ${industry.name.toLowerCase()} inquiries`}
+        imageAlt={`Professional GMS representatives handling ${industry.name.toLowerCase()} inquiries`}
         imagePosition="56% center"
       >
-        <Link to="/industries" className="inline-flex items-center gap-2 text-xs uppercase tracking-[.14em] text-white/60 hover:text-[#e0bd55]">
+        <Link to="/industries" className="inline-flex items-center gap-2 text-xs uppercase tracking-[.14em] text-white/60 hover:text-[#E7B84B]">
           <ArrowRight className="h-4 w-4 rotate-180" /> All Industries
         </Link>
         <div className="mt-6 flex items-center gap-4">
-          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-[#d4af37]/60 text-[#e0bd55]"><Icon className="h-6 w-6" /></span>
+          <span className="flex h-12 w-12 items-center justify-center rounded-full border border-[#C9962E]/60 text-[#E7B84B]"><Icon className="h-6 w-6" /></span>
           <div>
             <p className="font-serif text-xl text-white">Built around your criteria</p>
             <p className="mt-1 text-xs text-white/55">Qualified, documented, and routed</p>
@@ -31,7 +31,7 @@ export default function IndustryPage({ industry }) {
         </div>
       </PageHero>
 
-      <section className="py-20 border-t border-[#00282d]/8">
+      <section className="py-20 border-t border-[#0D2235]/8">
         <Container>
           <SectionHeading
             eyebrow="What We Handle"
@@ -40,9 +40,9 @@ export default function IndustryPage({ industry }) {
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {industry.focusPoints.map((p, i) => (
               <Reveal key={p} delay={(i % 3) * 0.05}>
-                <div className="card-light rounded-xl p-6 h-full hover:border-[#d4af37]/40 transition-colors">
+                <div className="card-light rounded-xl p-6 h-full hover:border-[#C9962E]/40 transition-colors">
                   <div className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-[#d4af37] mt-0.5 shrink-0" />
+                    <Check className="h-5 w-5 text-[#C9962E] mt-0.5 shrink-0" />
                     <span className="text-[#3a4a4c]">{p}</span>
                   </div>
                 </div>
@@ -52,7 +52,7 @@ export default function IndustryPage({ industry }) {
         </Container>
       </section>
 
-      <section className="py-20 border-t border-[#d4af37]/10 bg-[#00282d]">
+      <section className="py-20 border-t border-[#C9962E]/10 bg-[#0D2235]">
         <Container>
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             <Reveal>
@@ -65,7 +65,7 @@ export default function IndustryPage({ industry }) {
               <ul className="mt-8 space-y-3">
                 {industry.qualifications.map((q) => (
                   <li key={q} className="flex items-center gap-3 text-[#cddede]">
-                    <span className="h-1.5 w-1.5 rounded-full bg-[#d4af37]" />
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#C9962E]" />
                     {q}
                   </li>
                 ))}
@@ -76,7 +76,7 @@ export default function IndustryPage({ industry }) {
               <ul className="mt-8 space-y-3">
                 {industry.outcomes.map((o) => (
                   <li key={o} className="flex items-center gap-3 text-[#cddede]">
-                    <ArrowRight className="h-4 w-4 text-[#d4af37]" />
+                    <ArrowRight className="h-4 w-4 text-[#C9962E]" />
                     {o}
                   </li>
                 ))}
@@ -84,7 +84,7 @@ export default function IndustryPage({ industry }) {
             </Reveal>
           </div>
           {industry.disclaimer && (
-            <p className="mt-12 text-sm text-[#9fb3b3] border-l-2 border-[#d4af37]/40 pl-4 max-w-3xl leading-relaxed">
+            <p className="mt-12 text-sm text-[#C7CDD4] border-l-2 border-[#C9962E]/40 pl-4 max-w-3xl leading-relaxed">
               {industry.disclaimer}
             </p>
           )}
@@ -99,7 +99,7 @@ export default function IndustryPage({ industry }) {
               <h2 className="text-3xl md:text-4xl font-bold text-white max-w-2xl mx-auto">
                 Ready to turn {industry.name.toLowerCase()} inquiries into conversations?
               </h2>
-              <p className="mt-4 text-[#9fb3b3] max-w-xl mx-auto">
+              <p className="mt-4 text-[#C7CDD4] max-w-xl mx-auto">
                 Tell us about your lead flow and we will build a program around your definition of a qualified
                 opportunity.
               </p>

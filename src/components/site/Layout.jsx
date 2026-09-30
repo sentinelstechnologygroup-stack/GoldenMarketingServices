@@ -7,7 +7,7 @@ import ConsentBanner from './ConsentBanner';
 
 export default function Layout() {
   return (
-    <div className="min-h-screen flex flex-col bg-[#f4f1ea]">
+    <div className="min-h-screen flex flex-col bg-[#F6F1E7]">
       <SEO />
       <MarketingRuntime />
       <Header />

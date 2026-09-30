@@ -1,9 +1,9 @@
 import { Container, Reveal } from './ui';
 
 export const LINK_MEDIA = {
-  representative: '/media/link-representative.png',
-  team: '/media/link-engagement-team.png',
-  bridge: '/media/link-business-bridge.jpg',
+  representative: '/media/gms-representative.png',
+  team: '/media/gms-engagement-team.png',
+  bridge: '/media/gms-business-bridge.jpg',
 };
 
 export default function PageHero({
@@ -16,7 +16,7 @@ export default function PageHero({
   children,
 }) {
   return (
-    <section className="relative min-h-[520px] overflow-hidden bg-[#071b1e] pt-24 text-white">
+    <section className="relative min-h-[520px] overflow-hidden bg-[#07111F] pt-24 text-white">
       <div className="absolute inset-0 opacity-60 md:inset-y-0 md:left-auto md:right-0 md:w-[58%] md:opacity-100">
         <img
           src={image}
@@ -27,8 +27,8 @@ export default function PageHero({
           decoding="async"
         />
       </div>
-      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,27,30,.28)_0%,rgba(7,27,30,.74)_44%,#071b1e_88%)] md:bg-[linear-gradient(90deg,#071b1e_0%,rgba(7,27,30,.98)_36%,rgba(7,27,30,.72)_62%,rgba(7,27,30,.24)_100%)]" />
-      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4af37]/70 to-transparent" />
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(7,27,30,.28)_0%,rgba(7,27,30,.74)_44%,#07111F_88%)] md:bg-[linear-gradient(90deg,#07111F_0%,rgba(7,27,30,.98)_36%,rgba(7,27,30,.72)_62%,rgba(7,27,30,.24)_100%)]" />
+      <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#C9962E]/70 to-transparent" />
       <Container className="relative z-10 grid min-h-[425px] items-center gap-10 py-16 lg:grid-cols-[1.15fr_.85fr]">
         <Reveal>
           <div className="max-w-3xl">
@@ -39,7 +39,7 @@ export default function PageHero({
         </Reveal>
         {children && (
           <Reveal delay={0.12} className="self-end pb-2 lg:justify-self-end">
-            <div className="max-w-sm border-l border-[#d4af37]/55 bg-[#071b1e]/58 p-6 backdrop-blur-sm">
+            <div className="max-w-sm border-l border-[#C9962E]/55 bg-[#07111F]/58 p-6 backdrop-blur-sm">
               {children}
             </div>
           </Reveal>

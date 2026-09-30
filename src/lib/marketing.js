@@ -1,6 +1,6 @@
 const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://linkmarketingservices.com').replace(/\/$/, '');
-const CONSENT_KEY = 'link_marketing_consent_v1';
-const ATTRIBUTION_KEY = 'link_marketing_attribution_v1';
+const CONSENT_KEY = 'gms_marketing_consent_v1';
+const ATTRIBUTION_KEY = 'gms_marketing_attribution_v1';
 const CLICK_IDS = ['gclid', 'gbraid', 'wbraid', 'msclkid', 'fbclid'];
 const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'utm_id'];
 const ALLOWED_PARAMS = [...UTM_KEYS, ...CLICK_IDS];
@@ -86,7 +86,7 @@ export function trackLeadConversion(params = {}) {
 
 export function loadGoogleTag() {
   const tagId = import.meta.env.VITE_GOOGLE_TAG_ID;
-  if (!tagId || getConsent() !== 'granted' || document.querySelector('[data-link-google-tag]')) return;
+  if (!tagId || getConsent() !== 'granted' || document.querySelector('[data-gms-google-tag]')) return;
 
   window.dataLayer = window.dataLayer || [];
   window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };

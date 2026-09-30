@@ -16,10 +16,10 @@ export default function FAQ() {
         title="Straight Answers About How Link Works"
         subtitle="Understand the service, qualification process, handoff options, program structure, and what your team can expect."
         image={LINK_MEDIA.representative}
-        imageAlt="Link representative answering a business inquiry"
+        imageAlt="GMS representative answering a business inquiry"
         imagePosition="65% center"
       >
-        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#e0bd55]">The short version</p>
+        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#E7B84B]">The short version</p>
         <p className="mt-4 font-serif text-2xl leading-snug text-white">Your leads. Your criteria. Our trained engagement team.</p>
       </PageHero>
 
@@ -33,11 +33,11 @@ export default function FAQ() {
                     onClick={() => setOpen(open === i ? -1 : i)}
                     className="w-full flex items-center justify-between p-6 text-left"
                   >
-                    <span className="text-lg font-semibold text-[#04181a] pr-4">{f.q}</span>
+                    <span className="text-lg font-semibold text-[#07111F] pr-4">{f.q}</span>
                     {open === i ? (
-                      <Minus className="h-5 w-5 text-[#d4af37] shrink-0" />
+                      <Minus className="h-5 w-5 text-[#C9962E] shrink-0" />
                     ) : (
-                      <Plus className="h-5 w-5 text-[#9aa8a9] shrink-0" />
+                      <Plus className="h-5 w-5 text-[#7A838C] shrink-0" />
                     )}
                   </button>
                   <div

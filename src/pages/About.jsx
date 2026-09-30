@@ -3,7 +3,7 @@ import PageHero, { LINK_MEDIA } from '@/components/site/PageHero';
 import { Image } from '@/components/ui/image';
 import { ArrowRight, Zap, Users, GitBranch } from 'lucide-react';
 
-const ABOUT_IMG = '/media/link-business-bridge.jpg';
+const ABOUT_IMG = '/media/gms-business-bridge.jpg';
 
 const PILLARS = [
   { icon: Zap, title: 'Marketing creates demand', desc: 'Ads, content, and campaigns fill the top of the funnel with inquiries.' },
@@ -28,7 +28,7 @@ export default function About() {
         image={LINK_MEDIA.bridge}
         imageAlt="A modern illuminated bridge symbolizing the connection between marketing and sales"
       >
-        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#e0bd55]">Our role in the revenue journey</p>
+        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#E7B84B]">Our role in the revenue journey</p>
         <div className="mt-5 flex items-center gap-3">
           {['Demand', 'Engagement', 'Sales'].map((label, i) => (
             <div key={label} className="flex flex-1 items-center gap-2">
@@ -36,7 +36,7 @@ export default function About() {
                 <span className="block text-lg font-serif text-white">0{i + 1}</span>
                 <span className="text-[9px] uppercase tracking-[.1em] text-white/55">{label}</span>
               </div>
-              {i < 2 && <span className="h-px flex-1 bg-[#d4af37]/50" />}
+              {i < 2 && <span className="h-px flex-1 bg-[#C9962E]/50" />}
             </div>
           ))}
         </div>
@@ -46,7 +46,7 @@ export default function About() {
         <Container>
           <div className="grid lg:grid-cols-2 gap-14 items-center">
             <Reveal>
-              <div className="relative rounded-2xl overflow-hidden border border-[#00282d]/10 shadow-xl aspect-[4/3] bg-white">
+              <div className="relative rounded-2xl overflow-hidden border border-[#0D2235]/10 shadow-xl aspect-[4/3] bg-white">
                 <Image
                   src={ABOUT_IMG}
                   alt="A sleek dark glass bridge structure connecting two points at dusk"
@@ -77,7 +77,7 @@ export default function About() {
         </Container>
       </section>
 
-      <section className="py-20 border-t border-[#d4af37]/10 bg-[#00282d]">
+      <section className="py-20 border-t border-[#C9962E]/10 bg-[#0D2235]">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="The Flow" onDark title="How the three pieces fit together" />
@@ -88,13 +88,13 @@ export default function About() {
               return (
                 <Reveal key={p.title} delay={i * 0.08}>
                   <div className="card-surface rounded-xl p-8 h-full relative">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#d4af37]/10 border border-[#d4af37]/25 mb-5">
-                      <Icon className="h-6 w-6 text-[#d4af37]" />
+                    <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#C9962E]/10 border border-[#C9962E]/25 mb-5">
+                      <Icon className="h-6 w-6 text-[#C9962E]" />
                     </div>
                     <h3 className="text-lg font-semibold text-white mb-2">{p.title}</h3>
-                    <p className="text-sm text-[#9fb3b3] leading-relaxed">{p.desc}</p>
+                    <p className="text-sm text-[#C7CDD4] leading-relaxed">{p.desc}</p>
                     {i < PILLARS.length - 1 && (
-                      <ArrowRight className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 h-6 w-6 text-[#d4af37]/50" />
+                      <ArrowRight className="hidden md:block absolute -right-3 top-1/2 -translate-y-1/2 h-6 w-6 text-[#C9962E]/50" />
                     )}
                   </div>
                 </Reveal>
@@ -104,7 +104,7 @@ export default function About() {
         </Container>
       </section>
 
-      <section className="py-20 border-t border-[#00282d]/8">
+      <section className="py-20 border-t border-[#0D2235]/8">
         <Container>
           <Reveal>
             <SectionHeading eyebrow="What drives us" title="Principles we build every program around" />
@@ -113,7 +113,7 @@ export default function About() {
             {VALUES.map((v, i) => (
               <Reveal key={v.title} delay={(i % 2) * 0.08}>
                 <div className="card-light rounded-xl p-8 h-full">
-                  <h3 className="text-lg font-semibold text-[#04181a] mb-2">{v.title}</h3>
+                  <h3 className="text-lg font-semibold text-[#07111F] mb-2">{v.title}</h3>
                   <p className="text-[#4a5a5c] leading-relaxed">{v.desc}</p>
                 </div>
               </Reveal>
@@ -122,7 +122,7 @@ export default function About() {
         </Container>
       </section>
 
-      <section className="py-24 bg-[#00282d] border-t border-[#d4af37]/10">
+      <section className="py-24 bg-[#0D2235] border-t border-[#C9962E]/10">
         <Container>
           <Reveal>
             <div className="card-surface rounded-2xl p-10 md:p-16 text-center relative overflow-hidden">

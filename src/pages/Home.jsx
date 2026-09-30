@@ -8,9 +8,9 @@ import {
 import { Container, CTAButton, Reveal } from '@/components/site/ui';
 import { INDUSTRIES } from '@/components/site/industries';
 
-const HERO_REP = '/media/link-representative.png';
-const TEAM_IMG = '/media/link-engagement-team.png';
-const BRIDGE_IMG = '/media/link-business-bridge.jpg';
+const HERO_REP = '/media/gms-representative.png';
+const TEAM_IMG = '/media/gms-engagement-team.png';
+const BRIDGE_IMG = '/media/gms-business-bridge.jpg';
 
 const services = [
   {
@@ -69,7 +69,7 @@ const differentiators = [
 /** @param {{icon: IconComponent}} props */
 function GoldIcon({ icon: Icon }) {
   return (
-    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#d4af37]/70 text-[#e0bd55]">
+    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#C9962E]/70 text-[#E7B84B]">
       <Icon size={19} strokeWidth={1.6} />
     </span>
   );
@@ -80,7 +80,7 @@ function SectionIntro({ eyebrow, title, body, light = false, className = '' }) {
   return (
     <div className={className}>
       <p className="editorial-kicker">{eyebrow}</p>
-      <h2 className={`mt-3 max-w-3xl text-4xl leading-[1.05] sm:text-5xl ${light ? 'text-white' : 'text-[#071b1e]'}`}>
+      <h2 className={`mt-3 max-w-3xl text-4xl leading-[1.05] sm:text-5xl ${light ? 'text-white' : 'text-[#07111F]'}`}>
         {title}
       </h2>
       {body && (
@@ -94,33 +94,33 @@ function SectionIntro({ eyebrow, title, body, light = false, className = '' }) {
 
 export default function Home() {
   return (
-    <div className="overflow-hidden bg-[#f4f1ea]">
-      <section className="relative min-h-[720px] overflow-hidden bg-[#062d32] pt-24 text-white">
+    <div className="overflow-hidden bg-[#F6F1E7]">
+      <section className="relative min-h-[720px] overflow-hidden bg-[#07111F] pt-24 text-white">
         <div className="absolute inset-0 lg:inset-y-0 lg:left-auto lg:right-0 lg:w-[62%]">
           <img
             src={HERO_REP}
-            alt="Link representative speaking with a prospect"
+            alt="GMS representative speaking with a prospect"
             className="h-full w-full object-cover object-[64%_center]"
             loading="eager"
             decoding="async"
           />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,45,50,.42)_0%,rgba(5,62,67,.74)_38%,#063b40_86%)] lg:bg-[linear-gradient(90deg,#063b40_0%,rgba(5,62,67,.97)_32%,rgba(4,45,50,.68)_57%,rgba(4,25,29,.12)_82%)]" />
-        <div className="absolute inset-y-0 right-0 hidden w-[18%] border-l border-white/10 bg-[#071b1e]/45 lg:block" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(6,45,50,.42)_0%,rgba(5,62,67,.74)_38%,#07111F_86%)] lg:bg-[linear-gradient(90deg,#07111F_0%,rgba(5,62,67,.97)_32%,rgba(4,45,50,.68)_57%,rgba(4,25,29,.12)_82%)]" />
+        <div className="absolute inset-y-0 right-0 hidden w-[18%] border-l border-white/10 bg-[#07111F]/45 lg:block" />
         <Container className="relative z-10 flex min-h-[620px] items-center py-16 lg:py-24">
           <div className="max-w-[680px]">
             <Reveal>
               <p className="editorial-kicker">Lead response / qualification / appointment setting / live transfer</p>
               <h1 className="mt-5 text-5xl leading-[.98] tracking-[-.03em] sm:text-6xl lg:text-[76px]">
                 Stop Chasing Leads.
-                <span className="mt-1 block text-[#e0bd55]">Start Talking to Qualified Prospects.</span>
+                <span className="mt-1 block text-[#E7B84B]">Start Talking to Qualified Prospects.</span>
               </h1>
               <p className="mt-7 max-w-xl text-lg leading-8 text-white/80">
                 We verify, qualify, document, and hand off high-intent prospects—so your team spends less time chasing raw inquiries and more time advancing real opportunities.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <CTAButton to="/get-started" size="lg">Build My Lead Program <ArrowRight size={17} /></CTAButton>
-                <Link to="/how-it-works" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-white/55 px-6 text-sm font-semibold text-white transition hover:border-[#d4af37] hover:text-[#e0bd55]">
+                <Link to="/how-it-works" className="inline-flex min-h-12 items-center justify-center gap-2 rounded-md border border-white/55 px-6 text-sm font-semibold text-white transition hover:border-[#C9962E] hover:text-[#E7B84B]">
                   See How It Works
                 </Link>
               </div>
@@ -135,7 +135,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="border-y border-[#d4af37]/20 bg-[#071b1e] text-white">
+      <section className="border-y border-[#C9962E]/20 bg-[#07111F] text-white">
         <Container>
           <div className="grid md:grid-cols-2 lg:grid-cols-4">
             {benefits.map(([title, text, Icon], i) => (
@@ -151,8 +151,8 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="relative bg-[#00616a] py-20 text-white">
-        <div className="absolute right-0 top-0 h-full w-1/3 opacity-15 [background:repeating-linear-gradient(120deg,transparent_0_18px,#d4af37_19px_20px)]" />
+      <section className="relative bg-[#0D2235] py-20 text-white">
+        <div className="absolute right-0 top-0 h-full w-1/3 opacity-15 [background:repeating-linear-gradient(120deg,transparent_0_18px,#C9962E_19px_20px)]" />
         <Container className="relative">
           <Reveal>
             <SectionIntro
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="mt-10 grid gap-px overflow-hidden border border-white/15 bg-white/15 md:grid-cols-2 xl:grid-cols-4">
             {services.map((service, i) => (
               <Reveal key={service.title} delay={i * .06}>
-                <article className="h-full bg-[#004c54] p-7 transition duration-300 hover:bg-[#073e44]">
+                <article className="h-full bg-[#0D2235] p-7 transition duration-300 hover:bg-[#132C42]">
                   <GoldIcon icon={service.icon} />
                   <h3 className="mt-6 text-2xl leading-tight text-white">{service.title}</h3>
                   <p className="mt-3 text-sm leading-6 text-white/68">{service.body}</p>
@@ -175,7 +175,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-[#f4f1ea] py-16">
+      <section className="bg-[#F6F1E7] py-16">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[.8fr_2.2fr] lg:items-end">
             <SectionIntro eyebrow="A defined path from inquiry to client outcome" title="The GMS Qualification Gate" />
@@ -192,13 +192,13 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="relative min-h-[540px] overflow-hidden bg-[#071b1e] text-white">
+      <section className="relative min-h-[540px] overflow-hidden bg-[#07111F] text-white">
         <div className="absolute inset-0 opacity-45">
-          <img src={TEAM_IMG} alt="Link engagement team" className="h-full w-full object-cover" loading="lazy" decoding="async" />
+          <img src={TEAM_IMG} alt="GMS engagement team" className="h-full w-full object-cover" loading="lazy" decoding="async" />
         </div>
         <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(5,23,27,.92),rgba(5,23,27,.77)_45%,rgba(5,23,27,.42))]" />
         <Container className="relative py-24">
-          <div className="ml-auto max-w-3xl border-l border-[#d4af37]/55 pl-8 lg:pl-14">
+          <div className="ml-auto max-w-3xl border-l border-[#C9962E]/55 pl-8 lg:pl-14">
             <Reveal>
               <SectionIntro
                 eyebrow="People, process, accountability"
@@ -209,7 +209,7 @@ export default function Home() {
               <div className="mt-10 grid gap-x-10 gap-y-4 sm:grid-cols-2">
                 {['Trained bilingual representatives', 'Client-approved scripts', 'Intelligent routing', 'Structured follow-up', 'Quality review and coaching', 'Clear lead dispositions'].map(item => (
                   <div key={item} className="flex items-center gap-3 border-b border-white/10 pb-3 text-sm text-white/80">
-                    <Check size={16} className="text-[#e0bd55]" /> {item}
+                    <Check size={16} className="text-[#E7B84B]" /> {item}
                   </div>
                 ))}
               </div>
@@ -218,7 +218,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="bg-[#f4f1ea] py-20">
+      <section className="bg-[#F6F1E7] py-20">
         <Container>
           <div className="grid gap-10 lg:grid-cols-[1.05fr_.95fr] lg:items-center">
             <Reveal>
@@ -235,10 +235,10 @@ export default function Home() {
                   {['Slow response times', 'Unqualified inquiries', 'Leads falling through the cracks', 'Lost opportunities'].map(x => <li key={x} className="flex gap-3"><span className="text-[#b68a27]">—</span>{x}</li>)}
                 </ul>
               </div>
-              <div className="bg-[#00616a] p-7 text-white shadow-[0_18px_50px_rgba(0,49,55,.18)]">
+              <div className="bg-[#0D2235] p-7 text-white shadow-[0_18px_50px_rgba(0,49,55,.18)]">
                 <p className="font-serif text-2xl">The Golden Advantage</p>
                 <ul className="mt-5 space-y-3 text-sm text-white/78">
-                  {['Prompt, professional follow-up', 'Qualified prospects', 'Structured process', 'More conversations for your team'].map(x => <li key={x} className="flex gap-3"><Check size={15} className="mt-0.5 shrink-0 text-[#e0bd55]" />{x}</li>)}
+                  {['Prompt, professional follow-up', 'Qualified prospects', 'Structured process', 'More conversations for your team'].map(x => <li key={x} className="flex gap-3"><Check size={15} className="mt-0.5 shrink-0 text-[#E7B84B]" />{x}</li>)}
                 </ul>
               </div>
             </div>
@@ -246,7 +246,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="grid min-h-[330px] bg-[#071b1e] text-white md:grid-cols-3">
+      <section className="grid min-h-[330px] bg-[#07111F] text-white md:grid-cols-3">
         {[
           [HERO_REP, '01', 'Respond', 'Prompt, professional outreach begins the engagement.'],
           [TEAM_IMG, '02', 'Qualify', 'A real conversation tests fit, intent, and timing.'],
@@ -254,10 +254,10 @@ export default function Home() {
         ].map(([src, number, title, body], i) => (
           <figure key={title} className="group relative min-h-[290px] overflow-hidden border-white/10 md:border-r">
             <img src={src} alt="" className="absolute inset-0 h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]" loading="lazy" decoding="async" />
-            <div className={`absolute inset-0 ${i === 1 ? 'bg-[#003f46]/70' : 'bg-[#071b1e]/64'}`} />
-            <figcaption className="absolute inset-x-0 bottom-0 border-t border-[#d4af37]/35 bg-[#071b1e]/78 p-6 backdrop-blur-sm">
+            <div className={`absolute inset-0 ${i === 1 ? 'bg-[#0D2235]/70' : 'bg-[#07111F]/64'}`} />
+            <figcaption className="absolute inset-x-0 bottom-0 border-t border-[#C9962E]/35 bg-[#07111F]/78 p-6 backdrop-blur-sm">
               <div className="flex items-start gap-4">
-                <span className="font-serif text-3xl text-[#e0bd55]">{number}</span>
+                <span className="font-serif text-3xl text-[#E7B84B]">{number}</span>
                 <div>
                   <p className="font-serif text-2xl">{title}</p>
                   <p className="mt-1 text-xs leading-5 text-white/62">{body}</p>
@@ -268,7 +268,7 @@ export default function Home() {
         ))}
       </section>
 
-      <section className="relative bg-[#00616a] py-20 text-white">
+      <section className="relative bg-[#0D2235] py-20 text-white">
         <Container>
           <div className="grid gap-8 lg:grid-cols-[.75fr_2.25fr] lg:items-end">
             <SectionIntro
@@ -281,11 +281,11 @@ export default function Home() {
               {INDUSTRIES.slice(0, 6).map((industry, i) => {
                 const Icon = industry.icon || Target;
                 return (
-                  <Link key={industry.slug || industry.name} to={`/industries/${industry.slug}`} className="group bg-[#004c54] p-6 transition hover:bg-[#073e44]">
-                    <Icon className="text-[#e0bd55]" size={23} strokeWidth={1.5} />
+                  <Link key={industry.slug || industry.name} to={`/industries/${industry.slug}`} className="group bg-[#0D2235] p-6 transition hover:bg-[#132C42]">
+                    <Icon className="text-[#E7B84B]" size={23} strokeWidth={1.5} />
                     <p className="mt-7 font-serif text-xl text-white">{industry.name}</p>
                     <p className="mt-2 line-clamp-2 text-xs leading-5 text-white/55">{industry.shortDescription || industry.description}</p>
-                    <span className="mt-5 inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-[.16em] text-[#e0bd55]">Explore <ArrowRight size={12} /></span>
+                    <span className="mt-5 inline-flex items-center gap-1 text-[10px] font-bold uppercase tracking-[.16em] text-[#E7B84B]">Explore <ArrowRight size={12} /></span>
                   </Link>
                 );
               })}
@@ -299,7 +299,7 @@ export default function Home() {
           <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
             <div className="relative min-h-[390px] overflow-hidden">
               <img src={TEAM_IMG} alt="Representative following a client-approved conversation" className="absolute inset-0 h-full w-full object-cover" loading="lazy" decoding="async" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#071b1e]/70 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#07111F]/70 to-transparent" />
               <p className="absolute bottom-6 left-7 font-serif text-2xl text-white">Your prospect. Your brand. Our team.</p>
             </div>
             <Reveal>
@@ -320,11 +320,11 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="relative overflow-hidden bg-[#071b1e] text-white">
+      <section className="relative overflow-hidden bg-[#07111F] text-white">
         <div className="absolute inset-0 opacity-35 sm:opacity-45 lg:left-auto lg:w-[42%]">
           <img src={HERO_REP} alt="" className="h-full w-full object-cover object-[65%_center]" loading="lazy" decoding="async" />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-r from-[#071b1e] via-[#071b1e]/95 to-[#071b1e]/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#07111F] via-[#07111F]/95 to-[#07111F]/40" />
         <Container className="relative py-16">
           <div className="max-w-4xl">
             <p className="editorial-kicker">Ready prospects, connected in real time</p>
@@ -332,8 +332,8 @@ export default function Home() {
             <p className="mt-4 max-w-2xl text-white/65">When a prospect is qualified and ready, we connect them to your team with context—so the handoff feels seamless for both sides.</p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {['Qualified prospects', 'Real-time connection', 'Client-defined routing', 'Clear disposition tracking'].map(item => (
-                <div key={item} className="flex items-center gap-3 border-t border-[#d4af37]/40 pt-4 text-sm text-white/80">
-                  <Check size={15} className="text-[#e0bd55]" /> {item}
+                <div key={item} className="flex items-center gap-3 border-t border-[#C9962E]/40 pt-4 text-sm text-white/80">
+                  <Check size={15} className="text-[#E7B84B]" /> {item}
                 </div>
               ))}
             </div>
@@ -342,7 +342,7 @@ export default function Home() {
       </section>
 
       <section className="grid lg:grid-cols-2">
-        <div className="bg-[#f4f1ea] px-6 py-20 sm:px-10 lg:px-[max(4rem,calc((100vw-1280px)/2))]">
+        <div className="bg-[#F6F1E7] px-6 py-20 sm:px-10 lg:px-[max(4rem,calc((100vw-1280px)/2))]">
           <SectionIntro
             eyebrow="Multi-channel persistence"
             title="Follow-Up & Nurturing"
@@ -352,14 +352,14 @@ export default function Home() {
             {['Phone', 'SMS', 'Email', 'Scheduled callback'].map(x => <span key={x} className="border border-[#cfc6b4] bg-white/60 px-4 py-2 text-xs font-semibold uppercase tracking-[.12em] text-[#31474a]">{x}</span>)}
           </div>
         </div>
-        <div className="bg-[#00616a] px-6 py-20 text-white sm:px-10 lg:px-16">
+        <div className="bg-[#0D2235] px-6 py-20 text-white sm:px-10 lg:px-16">
           <SectionIntro
             eyebrow="Reconnect. Re-engage. Create opportunity."
             title="Database Reactivation"
             body="The next valuable conversation may already be in your database. We re-engage past leads with personalized outreach to uncover renewed interest."
             light
           />
-          <CTAButton to="/services" variant="outline" className="mt-8 border-white/55 text-white hover:bg-white hover:text-[#063b40]">Explore Reactivation <ArrowRight size={16} /></CTAButton>
+          <CTAButton to="/services" variant="outline" className="mt-8 border-white/55 text-white hover:bg-white hover:text-[#07111F]">Explore Reactivation <ArrowRight size={16} /></CTAButton>
         </div>
       </section>
 
@@ -383,7 +383,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="border-t border-[#ded7cb] bg-[#f4f1ea] py-20">
+      <section className="border-t border-[#ded7cb] bg-[#F6F1E7] py-20">
         <Container>
           <SectionIntro eyebrow="A trusted extension of your team" title="Why Golden Marketing Services" />
           <div className="mt-10 grid gap-px border border-[#d8d2c6] bg-[#d8d2c6] sm:grid-cols-2 lg:grid-cols-3">
@@ -398,7 +398,7 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="border-y border-[#d4af37]/30 bg-[#071b1e] py-8 text-white">
+      <section className="border-y border-[#C9962E]/30 bg-[#07111F] py-8 text-white">
         <Container className="flex flex-col justify-between gap-5 md:flex-row md:items-center">
           <div>
             <p className="font-serif text-2xl">Part of the Link Business Alliance ecosystem.</p>
@@ -408,8 +408,8 @@ export default function Home() {
         </Container>
       </section>
 
-      <section className="relative overflow-hidden bg-[#00616a] py-20 text-white">
-        <div className="absolute inset-0 opacity-10 [background:repeating-linear-gradient(120deg,transparent_0_20px,#d4af37_21px_22px)]" />
+      <section className="relative overflow-hidden bg-[#0D2235] py-20 text-white">
+        <div className="absolute inset-0 opacity-10 [background:repeating-linear-gradient(120deg,transparent_0_20px,#C9962E_21px_22px)]" />
         <Container className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div>
             <p className="editorial-kicker">Let’s build a lead engagement program tailored to your business.</p>

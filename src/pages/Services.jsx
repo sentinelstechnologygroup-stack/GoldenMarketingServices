@@ -23,14 +23,14 @@ export default function Services() {
         title="Everything Between an Inquiry and a Documented Handoff"
         subtitle="Link works the acquisition gap end-to-end—from initial inquiry through verification, qualification, documented contact, routing, handoff, acceptance, and outcome tracking."
         image={LINK_MEDIA.representative}
-        imageAlt="Professional Link representative engaging a prospect"
+        imageAlt="Professional GMS representative engaging a prospect"
         imagePosition="62% center"
       >
-        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#e0bd55]">The engagement path</p>
+        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#E7B84B]">The engagement path</p>
         <div className="mt-5 grid grid-cols-4 gap-2">
           {['Verify', 'Qualify', 'Connect', 'Prove'].map((label, i) => (
             <div key={label} className="text-center">
-              <span className="mx-auto flex h-8 w-8 items-center justify-center rounded-full border border-[#d4af37]/60 text-[10px] text-[#e0bd55]">{i + 1}</span>
+              <span className="mx-auto flex h-8 w-8 items-center justify-center rounded-full border border-[#C9962E]/60 text-[10px] text-[#E7B84B]">{i + 1}</span>
               <p className="mt-2 text-[9px] uppercase tracking-[.08em] text-white/65">{label}</p>
             </div>
           ))}
@@ -42,14 +42,14 @@ export default function Services() {
           <div className="grid gap-5 md:grid-cols-2">
             {SERVICES.map((s, i) => (
               <Reveal key={s.name} delay={(i % 2) * 0.08}>
-                <div className="card-light rounded-xl p-8 h-full group hover:border-[#d4af37]/40 transition-all">
+                <div className="card-light rounded-xl p-8 h-full group hover:border-[#C9962E]/40 transition-all">
                   <div className="flex items-center justify-between mb-5">
-                    <span className="text-[#00838f] text-sm font-mono">
+                    <span className="text-[#C9962E] text-sm font-mono">
                       {String(i + 1).padStart(2, '0')}
                     </span>
-                    <ArrowRight className="h-5 w-5 text-[#9aa8a9] group-hover:text-[#d4af37] transition-colors" />
+                    <ArrowRight className="h-5 w-5 text-[#7A838C] group-hover:text-[#C9962E] transition-colors" />
                   </div>
-                  <h3 className="text-xl font-semibold text-[#04181a] mb-3">{s.name}</h3>
+                  <h3 className="text-xl font-semibold text-[#07111F] mb-3">{s.name}</h3>
                   <p className="text-[#4a5a5c] leading-relaxed">{s.desc}</p>
                 </div>
               </Reveal>
@@ -58,7 +58,7 @@ export default function Services() {
         </Container>
       </section>
 
-      <section className="py-24 bg-[#00282d] border-t border-[#d4af37]/10">
+      <section className="py-24 bg-[#0D2235] border-t border-[#C9962E]/10">
         <Container>
           <Reveal>
             <div className="card-surface rounded-2xl p-10 md:p-16 text-center relative overflow-hidden">

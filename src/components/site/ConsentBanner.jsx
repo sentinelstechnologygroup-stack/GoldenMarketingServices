@@ -28,13 +28,13 @@ export default function ConsentBanner() {
   };
 
   return (
-    <aside className="fixed inset-x-4 bottom-4 z-[80] mx-auto max-w-3xl rounded-xl border border-[#d4af37]/30 bg-[#071b1e] p-5 text-white shadow-2xl md:flex md:items-center md:gap-6" aria-label="Privacy choices">
+    <aside className="fixed inset-x-4 bottom-4 z-[80] mx-auto max-w-3xl rounded-xl border border-[#C9962E]/30 bg-[#07111F] p-5 text-white shadow-2xl md:flex md:items-center md:gap-6" aria-label="Privacy choices">
       <p className="text-sm leading-6 text-white/75">
-        We use optional analytics and advertising cookies to measure performance. You can accept or decline them. See our <Link to="/privacy" className="text-[#e0bd55] underline underline-offset-2">privacy policy</Link>.
+        We use optional analytics and advertising cookies to measure performance. You can accept or decline them. See our <Link to="/privacy" className="text-[#E7B84B] underline underline-offset-2">privacy policy</Link>.
       </p>
       <div className="mt-4 flex shrink-0 gap-3 md:mt-0">
         <button type="button" onClick={() => decide('denied')} className="rounded-md border border-white/25 px-4 py-2 text-sm font-semibold hover:border-white/60">Decline</button>
-        <button type="button" onClick={() => decide('granted')} className="rounded-md bg-[#d4af37] px-4 py-2 text-sm font-semibold text-[#04181a] hover:bg-[#e0bd55]">Accept</button>
+        <button type="button" onClick={() => decide('granted')} className="rounded-md bg-[#C9962E] px-4 py-2 text-sm font-semibold text-[#07111F] hover:bg-[#E7B84B]">Accept</button>
       </div>
     </aside>
   );

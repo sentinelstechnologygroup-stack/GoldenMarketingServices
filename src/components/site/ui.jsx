@@ -11,13 +11,13 @@ const BTN_BASE =
   'inline-flex items-center justify-center gap-2 rounded-md font-semibold tracking-wide transition-all duration-300 disabled:opacity-40 disabled:pointer-events-none';
 const BTN_VARIANTS = {
   primary:
-    'bg-[#d4af37] text-[#04181a] hover:bg-[#c9a433] shadow-[0_8px_24px_-8px_rgba(212,175,55,0.6)] hover:shadow-[0_10px_30px_-8px_rgba(212,175,55,0.75)]',
+    'bg-[#C9962E] text-[#07111F] hover:bg-[#E7B84B] shadow-[0_8px_24px_-8px_rgba(212,175,55,0.6)] hover:shadow-[0_10px_30px_-8px_rgba(212,175,55,0.75)]',
   ghost:
-    'border border-[#00282d]/15 text-[#00282d] bg-white hover:border-[#d4af37] hover:text-[#00838f]',
+    'border border-[#0D2235]/15 text-[#0D2235] bg-white hover:border-[#C9962E] hover:text-[#C9962E]',
   outline:
-    'border border-[#d4af37]/50 text-[#00838f] hover:bg-[#d4af37]/10 hover:border-[#d4af37]',
+    'border border-[#C9962E]/50 text-[#C9962E] hover:bg-[#C9962E]/10 hover:border-[#C9962E]',
   onDark:
-    'border border-white/20 text-white bg-white/5 backdrop-blur hover:border-[#d4af37]/60 hover:text-[#d4af37]',
+    'border border-white/20 text-white bg-white/5 backdrop-blur hover:border-[#C9962E]/60 hover:text-[#C9962E]',
 };
 const BTN_SIZES = {
   sm: 'px-5 py-2.5 text-sm',
@@ -45,14 +45,14 @@ export function CTAButton({ to, href, onClick, type = 'button', variant = 'prima
 
 /** @param {{eyebrow?: string, title: string, subtitle?: string, align?: 'center'|'left', onDark?: boolean, className?: string}} props */
 export function SectionHeading({ eyebrow, title, subtitle, align = 'center', onDark = false, className }) {
-  const titleCls = onDark ? 'text-white' : 'text-[#04181a]';
-  const subCls = onDark ? 'text-[#9fb3b3]' : 'text-[#4a5a5c]';
-  const eyebrowCls = onDark ? 'text-[#d4af37]' : 'text-[#00838f]';
+  const titleCls = onDark ? 'text-white' : 'text-[#07111F]';
+  const subCls = onDark ? 'text-[#C7CDD4]' : 'text-[#4a5a5c]';
+  const eyebrowCls = onDark ? 'text-[#C9962E]' : 'text-[#C9962E]';
   return (
     <div className={cn(align === 'center' ? 'text-center mx-auto max-w-3xl' : 'text-left', className)}>
       {eyebrow && (
         <div className={cn('inline-flex items-center gap-2.5 mb-5', align === 'center' && 'justify-center')}>
-          <span className={cn('h-px w-8', onDark ? 'bg-[#d4af37]' : 'bg-[#d4af37]')} />
+          <span className={cn('h-px w-8', onDark ? 'bg-[#C9962E]' : 'bg-[#C9962E]')} />
           <span className={cn('text-xs uppercase tracking-[0.25em] font-semibold', eyebrowCls)}>{eyebrow}</span>
         </div>
       )}

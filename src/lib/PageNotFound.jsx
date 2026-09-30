@@ -5,7 +5,7 @@ export default function PageNotFound() {
   const location = useLocation();
 
   return (
-    <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-[#071b1e] pt-28 text-white">
+    <section className="relative flex min-h-[70vh] items-center overflow-hidden bg-[#07111F] pt-28 text-white">
       <div className="absolute inset-0 bg-grid opacity-10" />
       <Container className="relative py-24 text-center">
         <p className="editorial-kicker">Error 404</p>
@@ -14,7 +14,7 @@ export default function PageNotFound() {
           We could not find <span className="text-white">{location.pathname}</span>. Return home or review how Link turns leads into qualified opportunities.
         </p>
         <div className="mt-9 flex flex-wrap justify-center gap-3">
-          <Link to="/" className="rounded-md bg-[#d4af37] px-7 py-3.5 text-sm font-semibold text-[#04181a]">Return home</Link>
+          <Link to="/" className="rounded-md bg-[#C9962E] px-7 py-3.5 text-sm font-semibold text-[#07111F]">Return home</Link>
           <Link to="/how-it-works" className="rounded-md border border-white/25 px-7 py-3.5 text-sm font-semibold text-white">See how it works</Link>
         </div>
       </Container>

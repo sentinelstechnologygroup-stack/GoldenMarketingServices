@@ -64,7 +64,7 @@ function Wordmark() {
 }
 
 function FooterLink({ link }) {
-  const className = "text-xs text-white/60 transition-colors hover:text-[#e0bd55] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d4af37]";
+  const className = "text-xs text-white/60 transition-colors hover:text-[#E7B84B] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#C9962E]";
 
   if (link.href) {
     return (
@@ -79,7 +79,7 @@ function FooterLink({ link }) {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#d4af37]/20 bg-[#061a1d] text-white">
+    <footer className="border-t border-[#C9962E]/20 bg-[#07111F] text-white">
       <Container className="py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.45fr_repeat(5,minmax(0,1fr))]">
           <div className="sm:col-span-2 lg:col-span-1">
@@ -87,12 +87,12 @@ export default function Footer() {
             <p className="mt-5 max-w-xs text-sm leading-6 text-white/55">
               We help businesses turn new inquiries and existing databases into qualified conversations.
             </p>
-            <p className="mt-6 text-xs font-semibold uppercase tracking-[.15em] text-[#d4af37]">Built for Growth. Proven by Results.</p>
+            <p className="mt-6 text-xs font-semibold uppercase tracking-[.15em] text-[#C9962E]">Built for Growth. Proven by Results.</p>
           </div>
 
           {COLS.map((col) => (
             <div key={col.title}>
-              <h4 className="mb-4 text-[10px] font-bold uppercase tracking-[.22em] text-[#d4af37]">{col.title}</h4>
+              <h4 className="mb-4 text-[10px] font-bold uppercase tracking-[.22em] text-[#C9962E]">{col.title}</h4>
               <ul className="space-y-2.5">
                 {col.links.map((link) => (
                   <li key={link.label}>
@@ -110,7 +110,7 @@ export default function Footer() {
             <button
               type="button"
               onClick={() => window.dispatchEvent(new Event('link:privacy-settings'))}
-              className="underline decoration-white/25 underline-offset-4 transition-colors hover:text-[#e0bd55]"
+              className="underline decoration-white/25 underline-offset-4 transition-colors hover:text-[#E7B84B]"
             >
               Privacy choices
             </button>

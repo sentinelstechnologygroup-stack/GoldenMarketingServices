@@ -5,7 +5,7 @@ import { FAQS } from '@/content/faqs';
 import { SITE_URL } from '@/lib/marketing';
 
 const BRAND = 'Golden Marketing Services';
-const DEFAULT_IMAGE = `${SITE_URL}/brand/link-marketing-services-social.jpg`;
+const DEFAULT_IMAGE = `${SITE_URL}/brand/gms-social.jpg`;
 
 const PAGES = {
   '/': {

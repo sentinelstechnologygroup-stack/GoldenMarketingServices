@@ -37,8 +37,8 @@ export default function Header() {
       className={cn(
         'fixed inset-x-0 top-0 z-50 border-b transition-all duration-300',
         scrolled
-          ? 'border-[#d4af37]/15 bg-[#071b1e]/95 shadow-[0_12px_35px_rgba(0,0,0,0.18)] backdrop-blur-xl'
-          : 'border-white/10 bg-[#071b1e]/92 backdrop-blur-md'
+          ? 'border-[#C9962E]/15 bg-[#07111F]/95 shadow-[0_12px_35px_rgba(0,0,0,0.18)] backdrop-blur-xl'
+          : 'border-white/10 bg-[#07111F]/92 backdrop-blur-md'
       )}
     >
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
@@ -52,7 +52,7 @@ export default function Header() {
               <Link
                 key={item.to}
                 to={item.to}
-                className="text-[13px] font-medium text-[#dbe4e2] transition-colors hover:text-[#d4af37]"
+                className="text-[13px] font-medium text-[#F6F1E7] transition-colors hover:text-[#C9962E]"
               >
                 {item.label}
               </Link>
@@ -83,14 +83,14 @@ export default function Header() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-t border-white/10 bg-[#071b1e] lg:hidden"
+            className="overflow-hidden border-t border-white/10 bg-[#07111F] lg:hidden"
           >
             <div className="flex flex-col px-6 py-5">
               {NAV.map((item) => (
                 <Link
                   key={item.to}
                   to={item.to}
-                  className="border-b border-white/10 py-3 text-sm font-medium text-[#dbe4e2] hover:text-[#d4af37]"
+                  className="border-b border-white/10 py-3 text-sm font-medium text-[#F6F1E7] hover:text-[#C9962E]"
                 >
                   {item.label}
                 </Link>

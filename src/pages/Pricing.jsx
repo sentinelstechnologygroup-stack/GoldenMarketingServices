@@ -23,11 +23,11 @@ export default function Pricing() {
         imageAlt="Professional engagement team handling business conversations"
         imagePosition="58% center"
       >
-        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#e0bd55]">What your price reflects</p>
+        <p className="text-[10px] font-bold uppercase tracking-[.2em] text-[#E7B84B]">What your price reflects</p>
         <div className="mt-5 space-y-3">
           {['Conversation complexity', 'Qualification standard', 'Handoff method', 'Program volume'].map((label, i) => (
             <div key={label} className="flex items-center gap-3 text-sm text-white/75">
-              <span className="text-xs font-bold text-[#e0bd55]">0{i + 1}</span>
+              <span className="text-xs font-bold text-[#E7B84B]">0{i + 1}</span>
               <div className="h-px flex-1 bg-white/15" />
               <span>{label}</span>
             </div>
@@ -40,7 +40,7 @@ export default function Pricing() {
           <Reveal>
             <div className="card-surface rounded-2xl p-10 md:p-16 text-center relative overflow-hidden">
               <div className="absolute inset-x-0 top-0 h-px pulse-line" />
-              <div className="inline-flex items-center gap-2 rounded-full border border-[#d4af37]/30 bg-[#d4af37]/10 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-[#d4af37] font-semibold mb-6">
+              <div className="inline-flex items-center gap-2 rounded-full border border-[#C9962E]/30 bg-[#C9962E]/10 px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-[#C9962E] font-semibold mb-6">
                 Performance-based
               </div>
               <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-[1.05]">
@@ -48,10 +48,10 @@ export default function Pricing() {
                 <br />
                 NO SETUP FEE.
               </h2>
-              <p className="mt-6 text-xl text-[#d4af37] font-medium">
+              <p className="mt-6 text-xl text-[#C9962E] font-medium">
                 Pay for the defined acquisition outcome delivered.
               </p>
-              <p className="mt-4 text-[#9fb3b3] max-w-xl mx-auto">
+              <p className="mt-4 text-[#C7CDD4] max-w-xl mx-auto">
                 Your agreement defines exactly what becomes billable—such as a Qualified Handoff, Warm Transfer, or Scheduled Appointment—and the supporting verification, qualification, and acceptance record travels with it.
               </p>
               <div className="mt-8 flex justify-center">
@@ -74,8 +74,8 @@ export default function Pricing() {
               <Reveal key={f.label} delay={(i % 3) * 0.06}>
                 <div className="card-light rounded-xl p-6 h-full">
                   <div className="flex items-center gap-3 mb-3">
-                    <Check className="h-5 w-5 text-[#d4af37]" />
-                    <h3 className="font-semibold text-[#04181a]">{f.label}</h3>
+                    <Check className="h-5 w-5 text-[#C9962E]" />
+                    <h3 className="font-semibold text-[#07111F]">{f.label}</h3>
                   </div>
                   <p className="text-sm text-[#4a5a5c] leading-relaxed">{f.desc}</p>
                 </div>
@@ -85,11 +85,11 @@ export default function Pricing() {
         </Container>
       </section>
 
-      <section className="py-16 bg-[#00282d] border-t border-[#d4af37]/10">
+      <section className="py-16 bg-[#0D2235] border-t border-[#C9962E]/10">
         <Container className="max-w-3xl text-center">
           <Reveal>
             <h2 className="text-2xl md:text-3xl font-bold text-white">Tell us about your lead flow.</h2>
-            <p className="mt-4 text-[#9fb3b3]">
+            <p className="mt-4 text-[#C7CDD4]">
               We will build a program and send pricing aligned to your industry, volume, and qualification
               criteria.
             </p>
