@@ -4,12 +4,12 @@ import { INDUSTRIES } from './industries';
 import { FAQS } from '@/content/faqs';
 import { SITE_URL } from '@/lib/marketing';
 
-const BRAND = 'Link Marketing Services';
+const BRAND = 'Golden Marketing Services';
 const DEFAULT_IMAGE = `${SITE_URL}/brand/link-marketing-services-social.jpg`;
 
 const PAGES = {
   '/': {
-    title: 'Lead Response & Qualification Services | Link Marketing Services',
+    title: 'Lead Response & Qualification Services | Golden Marketing Services',
     description: 'Turn inbound leads into qualified conversations with bilingual lead response, qualification, appointment setting, live transfers, follow-up, and reporting.',
   },
   '/services': {
@@ -29,7 +29,7 @@ const PAGES = {
     description: 'No retainer and no setup fee. Request pricing for a program built around your market, lead volume, qualification criteria, and sales handoff needs.',
   },
   '/about': {
-    title: 'About Link Marketing Services',
+    title: 'About Golden Marketing Services',
     description: 'Meet the lead engagement partner built around real conversations, bilingual representatives, client-approved scripts, transparent reporting, and measured outcomes.',
   },
   '/faq': {
@@ -40,10 +40,10 @@ const PAGES = {
     title: 'Request a Lead Program Review',
     description: 'Tell us about your market, monthly lead volume, lead sources, and qualification needs. Request a tailored lead engagement program review.',
   },
-  '/privacy': { title: 'Privacy Policy', description: 'How Link Marketing Services collects, uses, protects, and shares website inquiry information.' },
-  '/terms': { title: 'Terms of Service', description: 'Terms governing use of the Link Marketing Services website and service information.' },
-  '/communications-policy': { title: 'Communications Policy', description: 'How Link Marketing Services handles inquiry follow-up, consent, message frequency, and opt-out requests.' },
-  '/accessibility': { title: 'Accessibility Statement', description: 'Link Marketing Services’ commitment to an accessible website experience.' },
+  '/privacy': { title: 'Privacy Policy', description: 'How Golden Marketing Services collects, uses, protects, and shares website inquiry information.' },
+  '/terms': { title: 'Terms of Service', description: 'Terms governing use of the Golden Marketing Services website and service information.' },
+  '/communications-policy': { title: 'Communications Policy', description: 'How Golden Marketing Services handles inquiry follow-up, consent, message frequency, and opt-out requests.' },
+  '/accessibility': { title: 'Accessibility Statement', description: 'Golden Marketing Services’ commitment to an accessible website experience.' },
 };
 
 function setMeta(selector, attrs) {
@@ -84,7 +84,7 @@ export default function SEO() {
   const page = industry
     ? {
         title: `${industry.name} Lead Response & Qualification Services`,
-        description: `${industry.intro} Learn how Link Marketing Services qualifies and routes ${industry.name.toLowerCase()} opportunities.`,
+        description: `${industry.intro} Learn how Golden Marketing Services qualifies and routes ${industry.name.toLowerCase()} opportunities.`,
       }
     : PAGES[pathname];
   const isNotFound = !page;
@@ -108,7 +108,7 @@ export default function SEO() {
     setMeta('meta[property="og:description"]', { property: 'og:description', content: description });
     setMeta('meta[property="og:url"]', { property: 'og:url', content: canonicalUrl });
     setMeta('meta[property="og:image"]', { property: 'og:image', content: DEFAULT_IMAGE });
-    setMeta('meta[property="og:image:alt"]', { property: 'og:image:alt', content: 'Link Marketing Services' });
+    setMeta('meta[property="og:image:alt"]', { property: 'og:image:alt', content: 'Golden Marketing Services' });
     setMeta('meta[name="twitter:card"]', { name: 'twitter:card', content: 'summary_large_image' });
     setMeta('meta[name="twitter:title"]', { name: 'twitter:title', content: title });
     setMeta('meta[name="twitter:description"]', { name: 'twitter:description', content: description });

@@ -1,12 +1,10 @@
-import approvedLinkLogo from '@/assets/link-marketing-services-logo-opaque.jpg';
-
 export default function BrandLogo({ className = '' }) {
   return (
     <img
-      src={approvedLinkLogo}
-      alt="Link Marketing Services"
-      width="900"
-      height="314"
+      src="/brand/gms-logo-horizontal-dark.png"
+      alt="Golden Marketing Services"
+      width="1600"
+      height="500"
       className={`block shrink-0 object-contain ${className}`}
       draggable="false"
     />

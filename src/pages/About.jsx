@@ -63,7 +63,7 @@ export default function About() {
                   consistently.
                 </p>
                 <p className="text-lg text-[#3a4a4c] leading-relaxed">
-                  Link Marketing Services was built to fix that. We sit between your marketing and your
+                  Golden Marketing Services was built to fix that. We sit between your marketing and your
                   sales team — responding to every inquiry, qualifying the opportunity, and delivering real
                   conversations to the people who close them.
                 </p>

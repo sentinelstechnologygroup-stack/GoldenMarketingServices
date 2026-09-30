@@ -4,11 +4,11 @@ import BrandLogo from './BrandLogo';
 
 const CUSTOMER_PORTAL_SIGN_IN =
   import.meta.env.VITE_CUSTOMER_PORTAL_SIGN_IN_URL ||
-  'https://link-marketing-solutions-customer.vercel.app/dashboard';
+  'https://golden-marketing-services-customer-qd4ezvf4z.vercel.app/dashboard';
 
 const AGENT_PORTAL_SIGN_IN =
   import.meta.env.VITE_AGENT_PORTAL_SIGN_IN_URL ||
-  'https://link-marketing-solutions-agent.vercel.app/login';
+  'https://golden-marketing-services-agent-x3heojimy.vercel.app/login';
 
 const COLS = [
   {
@@ -35,7 +35,7 @@ const COLS = [
     title: 'Company',
     links: [
       { label: 'About Us', to: '/about' },
-      { label: 'Why Link', to: '/about' },
+      { label: 'Why GMS', to: '/about' },
       { label: 'Our Process', to: '/how-it-works' },
       { label: 'Resources', to: '/faq' },
       { label: 'Contact', to: '/get-started' },
@@ -83,11 +83,11 @@ export default function Footer() {
       <Container className="py-14">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-[1.45fr_repeat(5,minmax(0,1fr))]">
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link to="/" aria-label="Link Marketing Services home"><Wordmark /></Link>
+            <Link to="/" aria-label="Golden Marketing Services home"><Wordmark /></Link>
             <p className="mt-5 max-w-xs text-sm leading-6 text-white/55">
               We help businesses turn new inquiries and existing databases into qualified conversations.
             </p>
-            <p className="mt-6 text-xs font-semibold uppercase tracking-[.15em] text-[#d4af37]">LinkMarketingServices.com</p>
+            <p className="mt-6 text-xs font-semibold uppercase tracking-[.15em] text-[#d4af37]">Built for Growth. Proven by Results.</p>
           </div>
 
           {COLS.map((col) => (
@@ -106,7 +106,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col justify-between gap-4 border-t border-white/10 pt-7 text-[11px] text-white/40 md:flex-row">
           <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            <p>Link Marketing Services is operated by Link Business Alliance LLC.</p>
+            <p>Golden Marketing Services is operated by Link Business Alliance LLC.</p>
             <button
               type="button"
               onClick={() => window.dispatchEvent(new Event('link:privacy-settings'))}
@@ -115,7 +115,7 @@ export default function Footer() {
               Privacy choices
             </button>
           </div>
-          <p>&copy; {new Date().getFullYear()} Link Marketing Services. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Golden Marketing Services. All rights reserved.</p>
         </div>
       </Container>
     </footer>

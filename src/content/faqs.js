@@ -1,6 +1,6 @@
 export const FAQS = [
   {
-    q: 'What does Link Marketing Services do?',
+    q: 'What does Golden Marketing Services do?',
     a: 'We respond to your leads, qualify the opportunity, follow up, and connect qualified prospects to your sales team — through booked appointments or live transfers.',
   },
   {

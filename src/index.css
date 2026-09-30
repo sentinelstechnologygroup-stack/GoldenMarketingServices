@@ -5,8 +5,8 @@
 @layer base {
   :root {
     --background: 210 20% 98%;
-    --foreground: 178 55% 7%;
-    --card: 176 100% 12%;
+    --foreground: 213 64% 12%;
+    --card: 190 72% 16%;
     --card-foreground: 180 25% 94%;
     --popover: 176 100% 10%;
     --popover-foreground: 180 25% 94%;
@@ -16,7 +16,7 @@
     --secondary-foreground: 178 55% 7%;
     --muted: 210 16% 95%;
     --muted-foreground: 200 8% 38%;
-    --accent: 176 80% 18%;
+    --accent: 190 72% 20%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 100%;
@@ -37,7 +37,7 @@
   }
   body {
     @apply text-foreground font-body antialiased;
-    background-color: #f4f1ea;
+    background-color: #f8f6ef;
   }
   html {
     scroll-behavior: smooth;

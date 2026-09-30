@@ -322,7 +322,7 @@ export default function GetStarted() {
               </div>
 
               <p className="mt-6 text-xs leading-5 text-[#647275]">
-                By submitting, you are requesting additional information and agree that Link Marketing Services may contact you by phone, text, or email regarding your inquiry. Message and data rates may apply. Consent is not a condition of purchase. See our <a href="/communications-policy" className="underline">communications policy</a> and <a href="/privacy" className="underline">privacy policy</a>.
+                By submitting, you are requesting additional information and agree that Golden Marketing Services may contact you by phone, text, or email regarding your inquiry. Message and data rates may apply. Consent is not a condition of purchase. See our <a href="/communications-policy" className="underline">communications policy</a> and <a href="/privacy" className="underline">privacy policy</a>.
               </p>
               {submitState.error && (
                 <p className="mt-4 rounded-lg border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800" role="alert">

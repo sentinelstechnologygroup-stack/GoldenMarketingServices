@@ -225,7 +225,7 @@ export default function Home() {
               <SectionIntro
                 eyebrow="Where revenue quietly disappears"
                 title="The Difference Between a Raw Inquiry and a Qualified Handoff"
-                body="Most lead processes stop at a form submission. Link Marketing Services continues through verification, qualification, human contact, documented handoff, client acceptance, and outcome tracking."
+                body="Most lead processes stop at a form submission. Golden Marketing Services continues through verification, qualification, human contact, documented handoff, client acceptance, and outcome tracking."
               />
             </Reveal>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -385,7 +385,7 @@ export default function Home() {
 
       <section className="border-t border-[#ded7cb] bg-[#f4f1ea] py-20">
         <Container>
-          <SectionIntro eyebrow="A trusted extension of your team" title="Why Link Marketing Services" />
+          <SectionIntro eyebrow="A trusted extension of your team" title="Why Golden Marketing Services" />
           <div className="mt-10 grid gap-px border border-[#d8d2c6] bg-[#d8d2c6] sm:grid-cols-2 lg:grid-cols-3">
             {differentiators.map(([title, body, Icon]) => (
               <article key={title} className="bg-[#f7f4ee] p-7">

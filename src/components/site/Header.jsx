@@ -10,7 +10,7 @@ const NAV = [
   { label: 'Solutions', to: '/services' },
   { label: 'Our Process', to: '/how-it-works' },
   { label: 'Industries', to: '/industries' },
-  { label: 'Why Link', to: '/#why' },
+  { label: 'Why GMS', to: '/#why' },
   { label: 'About', to: '/about' },
   { label: 'Resources', to: '/faq' },
 ];
@@ -43,7 +43,7 @@ export default function Header() {
     >
       <div className="mx-auto max-w-[1440px] px-6 md:px-10">
         <div className="flex h-[76px] items-center justify-between">
-          <Link to="/" aria-label="Link Marketing Services home" className="shrink-0">
+          <Link to="/" aria-label="Golden Marketing Services home" className="shrink-0">
             <Wordmark />
           </Link>
 
