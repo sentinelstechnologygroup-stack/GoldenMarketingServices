@@ -35,7 +35,7 @@ const DOCS = {
       },
       {
         h: 'Contact',
-        p: 'For privacy questions, contact privacy@linkmarketingservices.com.',
+        p: 'For privacy questions, contact privacy@goldenmarketingservices.com.',
       },
     ],
   },
@@ -91,7 +91,7 @@ const DOCS = {
       },
       {
         h: 'Contact',
-        p: 'For communications questions, contact support@linkmarketingservices.com.',
+        p: 'For communications questions, contact support@goldenmarketingservices.com.',
       },
     ],
   },
@@ -113,7 +113,7 @@ const DOCS = {
       },
       {
         h: 'Contact',
-        p: 'For accessibility questions, contact support@linkmarketingservices.com.',
+        p: 'For accessibility questions, contact support@goldenmarketingservices.com.',
       },
     ],
   },

@@ -1,4 +1,4 @@
-const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://linkmarketingservices.com').replace(/\/$/, '');
+const SITE_URL = (import.meta.env.VITE_SITE_URL || 'https://www.goldenmarketingservices.com').replace(/\/$/, '');
 const CONSENT_KEY = 'gms_marketing_consent_v1';
 const ATTRIBUTION_KEY = 'gms_marketing_attribution_v1';
 const CLICK_IDS = ['gclid', 'gbraid', 'wbraid', 'msclkid', 'fbclid'];

@@ -94,7 +94,7 @@ export default function GetStarted() {
     } catch {
       setSubmitState({
         pending: false,
-        error: 'We could not send your request. Please try again or email support@linkmarketingservices.com.',
+        error: 'We could not send your request. Please try again or email support@goldenmarketingservices.com.',
       });
     }
   };

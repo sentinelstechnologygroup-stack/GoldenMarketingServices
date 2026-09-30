@@ -18,7 +18,7 @@ const PAGES = {
   },
   '/how-it-works': {
     title: 'How Our Lead Qualification & Sales Handoff Process Works',
-    description: 'See how Link responds to new inquiries, holds real conversations, qualifies prospects, and hands sales-ready opportunities to your team.',
+    description: 'See how Golden Marketing Services responds to new inquiries, holds real conversations, qualifies prospects, and hands sales-ready opportunities to your team.',
   },
   '/industries': {
     title: 'Lead Qualification Services by Industry',
@@ -34,7 +34,7 @@ const PAGES = {
   },
   '/faq': {
     title: 'Lead Response & Qualification FAQs',
-    description: 'Answers about qualified leads, live transfers, appointment setting, database reactivation, supported industries, pricing, and the Link process.',
+    description: 'Answers about qualified leads, live transfers, appointment setting, database reactivation, supported industries, pricing, and the GMS process.',
   },
   '/get-started': {
     title: 'Request a Lead Program Review',
