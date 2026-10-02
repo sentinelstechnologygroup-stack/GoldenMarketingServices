@@ -19,7 +19,7 @@ function requestIp(req) {
 function isAllowedOrigin(req) {
   const origin = req.headers.origin;
   if (!origin) return true;
-  const configured = (process.env.ALLOWED_ORIGINS || 'https://linkmarketingservices.com,https://www.linkmarketingservices.com')
+  const configured = (process.env.ALLOWED_ORIGINS || 'https://goldenmarketingservices.com,https://www.goldenmarketingservices.com')
     .split(',').map((item) => item.trim()).filter(Boolean);
   if (configured.includes(origin)) return true;
   return process.env.VERCEL_ENV !== 'production' && /^https:\/\/[a-z0-9-]+\.vercel\.app$/i.test(origin);
