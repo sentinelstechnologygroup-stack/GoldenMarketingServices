@@ -100,6 +100,7 @@ export default async function handler(req, res) {
       headers: {
         'Content-Type': 'application/json',
         ...(process.env.LEAD_WEBHOOK_TOKEN ? { Authorization: `Bearer ${process.env.LEAD_WEBHOOK_TOKEN}` } : {}),
+        ...(process.env.GMS_LEAD_ROUTE_KEY ? { 'x-gms-route-key': process.env.GMS_LEAD_ROUTE_KEY } : {}),
       },
       body: JSON.stringify(lead),
       signal: AbortSignal.timeout(10000),
